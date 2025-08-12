@@ -1,0 +1,143 @@
+=>creating a java class with named test
+   class Test{
+   // Member variable
+   //Methods
+   }
+=>Declaring and initializing the obj
+  Test obj = new Test();
+=>Constructors in a java 
+  // default constructor
+   class test{
+   Test(){
+   }
+   public static void main(String []args){
+   Test obj = new Test();
+    // deafult constructor is automatically called when we created the obj
+   }
+   }
+   
+=>parameterized constructor(pass appid,appName)
+  class test{
+   int appid;
+   String appName;
+   public Test(int appid,String appName){
+   this.appid = appid;
+   this.appName = appName;
+   }
+   void Display(){
+   System.out.println("ID:"+appid+"Name"+appName);
+   }
+   public static void main(String []args){
+   Test obj1 = new Test(101,"Instagram");
+   Test obj2 = new Test(102,"Facebook");
+   obj1.Display();
+   obj2.Display();
+   }
+   }
+=>types of inheritance
+ //single inheritance
+  class A{
+  }
+  class B extends{
+  }
+  //Multilevel inheritance
+  class A{}
+  class B extends A{}
+  class c extends B{}
+  // Multiple inheritance
+  class A{}
+  class B{}
+  class C extends A,B{}
+  //hierarchial inheritance
+  class A{}
+  class B extends A{}
+  class C extends A{}
+  //Hybrid inheritance
+  class A{}
+  class B extends A{}
+  class C extends A{}
+  class D extends B,C{}
+=>polymorphism 
+  // Method Overloading=Compiletime polymorphism
+  class Calculator{
+   public static int Add(int a,int b){
+   return a+b;
+   }
+   public static double Add(double a, double b){
+   return a+b;
+   }
+   Calculator obj = new Calculator();
+   obj.Add(3,4);
+   System.out.println(Calculator.Add(5,6));
+   }
+=>Runtime Polymorphism=Method Overriding
+   public class Mobile{
+   void sms(){
+   System.out.println("Mobile class");
+   }}
+   public class Oneplus extends Mobile{
+   void sms(){
+   System.out.println("OnePlus class");
+   }
+   public static void main(String [] args){
+   OnePlus obj = new OnePlus();
+   obj.sms();
+   }}
+=>Abstraction
+ public static class MyAbstractClass{
+ public abstract void abstractMethod();
+ public void display(){
+ System.out.println("concrete method");
+ }
+ }
+=>public interface Bike{
+ public void start(){}
+ }
+ class Honda implements Bike{
+ public void start(){
+ System.out.println("Honda Bike");
+ }
+ }
+ class Apache implements Bike{
+  public void start(){
+  System.out.println("Apache Bike");
+  }
+ }
+ class Rider{
+  public static void void main(String []args){
+  Bike b1 = new Honda();
+  b1.start();
+  Bike b2 = new Apache();
+  b2.start();
+  }
+ }
+=>Encapulation //binding of the data and the method in one unit
+public class Artist{
+private String name;
+//getter method
+public String getName(){
+return name;
+}
+//setter method
+public void setName(String name){
+this.name = name;
+}
+}
+public class Show{
+ public static void main(String []args){
+ //creating the instance of the encapsulated class
+ Artist obj = new Artist();
+ //setting value in the name member
+ obj.setName("pavani");
+ //getting the value of the name 
+ System.out.println(obj.getName());
+ }
+ }
+=>
+=>
+=>
+=>
+=>
+=>
+=>
+
